@@ -5,7 +5,7 @@ title: About
 #   project is built with Material for MkDocs
 ---
 
-![Header Image](../assets/images/about_cover_image.png)  <!-- This is the image header -->
+![Header Image](assets/images/about_cover_image.png)  <!-- This is the image header -->
 
 Abstract matter is a coalition of thoughts and experience that takes a very different perspective on the world around us. The topics of discussion include Data Science, Machine Learning, Artificial Intelligence and how these integrate into industry and philosophy.
 
