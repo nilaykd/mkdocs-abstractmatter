@@ -8,7 +8,7 @@ slug: in-search-of-majorana-fermions
 #   Share the love – you can now add a badge to your README, showing that your
 #   project is built with Material for MkDocs
 categories:
-  - physics
+  - physics 
 tags:
   - quantum
   - mechanics
@@ -28,6 +28,5 @@ This concept maybe hard to grasp, but [Dr. Leo Kouwenhoven](https://qutech.nl/pe
 <p style="text-align: center; font-size: small;">
   Image Source: <a href="https://nanobiologyhonoursprogrammeblog.wordpress.com/2014/12/10/majoranas/">Link</a>
 </p>
-<br>
-<br>
+
 The discovery and manipulation of majorana has major implications in the field of quantum computing. The possibility of not having bits 1 and 0 but also having both together at the same time increases computation speed marginally. What incites curiosity is exploring topics like electron teleportation and actuation through induced localized surface plasmon resonance. The scope of LSPR induced spin dynamics is massive.
