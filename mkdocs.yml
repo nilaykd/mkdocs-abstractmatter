@@ -1,31 +1,73 @@
-site_name: abstractmatter
+# Project information
+site_name: Abstract Matter
+#site_url: https://squidfunk.github.io/mkdocs-material/
+site_author: Nilay Doshi
+site_description: >-
+  Abstract matter is a coalition of thoughts and experience that takes a very different perspective on the world around us. 
+  The topics of discussion include Data Science, Machine Learning, Artificial Intelligence and how these integrate into industry and philosophy.
 
-theme: 
+# Repository
+# repo_name: squidfunk/mkdocs-material
+# repo_url: https://github.com/squidfunk/mkdocs-material
+
+# Copyright
+copyright: Copyright &copy; 2015 - 2024 Nilay Doshi
+
+# Configuration
+theme:
   name: material
-  features: 
-    - navigation.tabs
-    - navigation.sections
-    - toc.integrate
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - content.tabs.link
-    - content.code.annotation
+  logo: assets/images/Transparent Logo.png
+  favicon: assets/images/Transparent Logo.png
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
     - content.code.copy
-  language: en
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-      primary: teal
-      accent: purple
-    - scheme: slate
-      toggle: 
-        icon: material/toggle-switch
+        icon: material/link
         name: Switch to light mode
-      primary: teal
-      accent: lime
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black  
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 extra:
   social:
@@ -33,6 +75,10 @@ extra:
       link: https://github.com/nilaykd
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/nilaykdoshi/
+  homepage: https://example.com
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -47,13 +93,23 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 copyright:  |
   &copy; 2024 <a href="https://github.com/nilaykd" target="_blank" rel="noopener">Nilay Doshi</a> 
 
 plugins:
-  - blog:
-      categories_name: Categories
+  - blog
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+  - social
+  - tags:
+      tags_file: tags.md
+
+# Page tree
+nav:
+  - About: about.md
+  - Blog:
+    - blog/index.md
+  - Tags: tags.md
