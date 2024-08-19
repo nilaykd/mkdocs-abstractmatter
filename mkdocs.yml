@@ -75,7 +75,7 @@ extra:
       link: https://github.com/nilaykd
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/nilaykdoshi/
-  homepage: https://example.com
+  homepage: https://abstractmatter.io/blog/
 
 extra_css:
   - stylesheets/extra.css
